@@ -1,2 +1,5 @@
 git reset name_of_file.idea/
 out/
+First.iml
+/out/
+/.idea/
