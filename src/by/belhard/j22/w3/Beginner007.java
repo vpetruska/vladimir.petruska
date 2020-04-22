@@ -9,7 +9,7 @@ import java.util.Scanner;
 //8 x 3 = 24
 //...
 //8 x 10 = 80
-public class Beginner7 {
+public class Beginner007 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Input first number: ");

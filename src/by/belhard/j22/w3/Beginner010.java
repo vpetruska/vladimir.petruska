@@ -4,7 +4,7 @@ package by.belhard.j22.w3;
 //4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
 //Expected Output
 //2.9760461760461765
-public class Beginner10 {
+public class Beginner010 {
     public static void main(String[] args) {
         System.out.println(4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));
     }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 //Input second number: 5
 //Expected Output :
 //25 x 5 = 125
-public class Beginner5 {
+public class Beginner005 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Input first number: ");

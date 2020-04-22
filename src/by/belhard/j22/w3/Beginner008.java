@@ -7,7 +7,7 @@ package by.belhard.j22.w3;
 //J  J  aaaaa   V V  aaaaa
 // JJ  a     a   V  a     a
 //
-public class Beginner8 {
+public class Beginner008 {
     public static void main(String[] args) {
         System.out.println("   J    a   v     v  a");
         System.out.println("   J   a a   v   v  a a");

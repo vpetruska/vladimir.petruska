@@ -7,7 +7,7 @@ package by.belhard.j22.w3;
 // |  ^  |
 // | '-' |
 // +-----+
-public class Beginner16 {
+public class Beginner016 {
     public static void main(String[] args) {
      char a = 34;
 

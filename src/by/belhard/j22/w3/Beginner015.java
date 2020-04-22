@@ -1,7 +1,7 @@
 package by.belhard.j22.w3;
 import java.util.Scanner;
 //15. Write a Java program to swap two variables. Go to the editor
-public class Beginner15 {
+public class Beginner015 {
     public static void main(String[] args) {
         int a , b, c;
         Scanner in = new Scanner(System.in);

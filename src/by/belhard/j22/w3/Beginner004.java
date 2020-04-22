@@ -10,7 +10,7 @@ package by.belhard.j22.w3;
 //1
 //19
 //13
-public class Beginner4 {
+public class Beginner004 {
     public static void main(String[] args) {
         System.out.println(-5+8*6);
         System.out.println((55+9)%9);

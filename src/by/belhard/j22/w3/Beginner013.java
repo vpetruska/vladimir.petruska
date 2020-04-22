@@ -7,7 +7,7 @@ package by.belhard.j22.w3;
 //Expected Output
 //Area is 5.6 * 8.5 = 47.60
 //Perimeter is 2 * (5.6 + 8.5) = 28.20
-public class Beginner13 {
+public class Beginner013 {
     public static void main(String[] args) {
         double a = 5.6, b = 8.5;
         double c = a*b;

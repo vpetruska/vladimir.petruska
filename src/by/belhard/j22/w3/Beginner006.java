@@ -10,7 +10,7 @@ import java.util.Scanner;
 //125 x 24 = 3000
 //125 / 24 = 5
 //125 mod 24 = 5
-public class Beginner6 {
+public class Beginner006 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Input first number: ");

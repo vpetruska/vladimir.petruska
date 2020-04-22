@@ -4,7 +4,7 @@ package by.belhard.j22.w3;
 //50/3
 //Expected Output :
 //16
-public class Beginner3{
+public class Beginner003 {
     public static void main(String[] args) {
         byte a = 50, b = 3;
         System.out.println(a/b);
