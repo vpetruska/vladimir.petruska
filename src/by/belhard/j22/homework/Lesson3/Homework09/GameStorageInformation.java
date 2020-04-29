@@ -1,16 +1,15 @@
 package by.belhard.j22.homework.Lesson3.Homework09;
-import javax.lang.model.element.NestingKind;
+
+
 import java.util.Scanner;
 
 public class GameStorageInformation {
 
     public static void main(String[] args) {
 
-        boolean yesNo;
-        String choise;
-
         Game Factorio = new Game(
                 "Factorio",
+                false,
                 1200,
                 1562,
                 Genre.Strategy,
@@ -21,38 +20,51 @@ public class GameStorageInformation {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Would you like to buy game "+Factorio.getName() + "?");
 
-        System.out.println("Yes/No");
+        if (!Factorio.getPurchased()) {
 
-        while (true) {
-            choise = in.nextLine().trim().toLowerCase();
-            if (choise.equals("yes")) {
-                yesNo = true;
-                break;
+            System.out.println("Would you like to buy game " + Factorio.getName() + "?");
+
+            System.out.println("Yes/No");
+
+            while (true) {
+                String choise;
+                choise = in.nextLine().trim().toLowerCase();
+                if (choise.equals("yes")) {
+                    System.out.println(Factorio.getName() + " will cost you: " + (Factorio.getCost() / 100) + "." + (Factorio.getCost() % 100) + " $");
+                    System.out.println("With average download speed of 40 Mb/s it will take " + (Factorio.getSize() / 5) / 60 + " minutes to download");
+                    Factorio.buyGame();
+                    break;
+                } else if (choise.equals("no")) {
+                    System.out.println("You are missing on one of the best " + Factorio.getGenre() + " games of the " + Factorio.getYearMade() + " year");
+                    break;
+                } else
+                    System.out.println("Pleas answer Yes or No, Thanks!");
             }
-            else if (choise.equals("no")) {
-                yesNo = false;
-                break;
-            }
-            else
-                System.out.println("Pleas answer Yes or No, Thanks!");
+            System.out.println("Game were bought " + Factorio.getNumberOfPuchases() + " time(s)");
         }
 
-        if (yesNo = true){
+            System.out.println("Would you like to play the game "+ Factorio.getName());
 
-            System.out.println(Factorio.getName() + " will cost you: " + Factorio.getCost() + " $");
-            System.out.println("Would you like to download a game?");
-                boolean downloadAnswer = in.nextBoolean();
-                if (downloadAnswer = true){
-                    String downloadTime = ((Factorio.getSize()/60)+" hours and "+ (Factorio.getSize() % 60) + " minutes");
-                    System.out.println("With the speed of 1mb/s it would take you " + downloadTime);
+            while (true) {
+                String choise;
+                choise = in.nextLine().trim().toLowerCase();
+                if (choise.equals("yes")) {
+                    System.out.println("How many hours you would like to play?");
+                    Scanner x = new Scanner(System.in);
+                    int played = x.nextInt();
+                    while (played > 0) {
+                        Factorio.playGame();
+                        played--;
+                    }
+                    break;
+                } else if (choise.equals("no")) {
 
-                }
-
+                    break;
+                } else
+                    System.out.println("Pleas answer Yes or No, Thanks!");
             }
-        else
-            System.out.println("qq");
 
+        System.out.println("You played the game for " + Factorio.getHoursPlayed() + " hours");
+        }
     }
-}
