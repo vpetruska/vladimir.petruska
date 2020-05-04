@@ -25,7 +25,7 @@ public class Homework06 {
 
         Arrays.sort(array);
 
-        System.out.println("Median value of the array: " + (array[5]+array[6]) / 2);
+        System.out.println("Median value of the array: " + (array[4]+array[5]) / 2);
     }
 }
 
