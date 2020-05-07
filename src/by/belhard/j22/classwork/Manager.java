@@ -4,8 +4,20 @@ public class Manager extends Person{
 
     private int phoneNumber;
 
-    public String Manager (String name, int age, int phoneNumber){
-        super (name,age);
+
+    public Manager (String name,int age, int phoneNumber){
+        super(name,age);
         this.phoneNumber= phoneNumber;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "phoneNumber=" + phoneNumber +
+                '}';
     }
 }
