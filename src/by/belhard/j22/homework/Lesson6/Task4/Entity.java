@@ -6,6 +6,7 @@
 
 package by.belhard.j22.homework.Lesson6.Task4;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Entity {
@@ -23,6 +24,15 @@ public class Entity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public static void getByName(String name, List<Entity> entities) {
+
+        for (int i = 0; i < entities.size(); i++) {
+            if (entities.get(i).toString().equals(name))
+                System.out.println(entities.get(i).toString());
+        }
+
     }
 
     @Override
